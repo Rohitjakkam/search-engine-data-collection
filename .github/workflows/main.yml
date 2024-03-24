@@ -92,14 +92,18 @@ jobs:
       - name: Run Docker Image to serve users
         run: |
           docker run --name=data-collection -d \
-          -e AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }} \
-          -e AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }} \
+          -e AWS_ACCESS_KEY_ID= AKIAYMFY3GQEJXL5GDHQ   \
+          -e AWS_SECRET_ACCESS_KEY= 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   \
           -e AWS_BUCKET_HEADER_URL=${{ secrets.AWS_BUCKET_HEADER_URL }} \
           -e AWS_BUCKET_NAME=${{ secrets.AWS_BUCKET_NAME }} \
           -e DATABASE_NAME=${{ secrets.DATABASE_NAME }} \
           -e ATLAS_CLUSTER_USERNAME=${{ secrets.ATLAS_CLUSTER_USERNAME }} \
           -e ATLAS_CLUSTER_PASSWORD=${{ secrets.ATLAS_CLUSTER_PASSWORD }} \
           -p 8080:8080 575913276424.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/ai-search-engine:DataCollection
+          
+          
+          
+    
 
 
 
