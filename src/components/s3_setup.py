@@ -3,6 +3,7 @@ import sys
 from zipfile import ZipFile
 import shutil
 from src.exception import CustomException
+# All buddu
 # https://www.kaggle.com/datasets/imbikramsaha/caltech-101 [ Get data from kaggle and put it into data folder ]
 
 class DataStore:
