@@ -5,8 +5,8 @@ import shutil
 from src.exception import CustomException
 
 os.environ["AWS_ACCESS_KEY_ID"] = "AKIAYMFY3GQEJXL5GDHQ"
-os.environ["AWS_SECRET_ACCESS_KEY"] = "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"
-os.environ["AWS_REGION"] = "us-east-1"
+# os.environ["AWS_SECRET_ACCESS_KEY"] = "UhtFrB5GmZMU7Gd864jnxtlChEUpgXaBFUtpJO7u"
+# os.environ["AWS_REGION"] = "us-east-1"
 # https://www.kaggle.com/datasets/imbikramsaha/caltech-101 [ Get data from kaggle and put it into data folder ]
 
 class DataStore:
