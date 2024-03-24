@@ -1,6 +1,9 @@
 import pymongo
 import os
 
+import os
+
+os.environ["DATABASE_NAME"] = "ReverseImageSearchEngine"
 
 class MongodbClient:
     client = None
