@@ -4,6 +4,8 @@ import os
 import os
 
 os.environ["DATABASE_NAME"] = "ReverseImageSearchEngine"
+os.environ["ATLAS_CLUSTER_USERNAME"] = "miniproject"
+os.environ["ATLAS_CLUSTER_PASSWORD"] = "mini@1212"
 
 class MongodbClient:
     client = None
@@ -16,4 +18,3 @@ class MongodbClient:
         self.client = MongodbClient.client
         self.database = self.client[database_name]
         self.database_name = database_name
-# mongodb+srv://<username>:<password>@reverseimagesearch.imkelpv.mongodb.net/
