@@ -2,7 +2,7 @@ import os
 import base64
 from from_root import from_root
 from tqdm import tqdm
-# Hi ji 
+# Hi ji namste
 
 # Upload data using boto3 [ Takes a lot of time ]
 def upload_bulk_data(root="caltech-101"):
