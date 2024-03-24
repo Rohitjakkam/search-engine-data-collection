@@ -80,7 +80,8 @@ jobs:
         # run: sudo docker login -u AWS -p $(aws ecr get-login-password --region ${{ secrets.AWS_REGION }}) ${{ secrets.AWS_ECR_LOGIN_URI }}
 
       - name: Pull App Image
-        run: sudo docker pull 575913276424.dkr.ecr.us-east-1.amazonaws.com/ai-search-engine:DataCollection
+        # run: sudo docker pull 575913276424.dkr.ecr.us-east-1.amazonaws.com/ai-search-engine:DataCollection
+        run: docker pull 575913276424.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/ai-search-engine:DataCollection
 
       - name: Remove Already Running Container
         run: docker ps -q --filter "name=data-collection" | grep -q . && docker stop ${IMAGE_NAME} && docker rm -fv ${IMAGE_NAME} || true
