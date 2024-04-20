@@ -4,7 +4,7 @@ from fastapi import FastAPI, File, UploadFile
 from fastapi.responses import JSONResponse
 from typing import List, Union, Any
 import uvicorn
-
+# commiting to trying on 20th april 2024
 
 app = FastAPI(title="DataCollection-Server")
 mongo = MongodbClient()
